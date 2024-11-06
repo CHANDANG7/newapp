@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/CHANDANG7/newapp.git'
+                git branch: 'main', url: 'https://github.com/CHANDANG7/newapp.git'
             }
         }
         stage('Install Dependencies') {
